@@ -1,0 +1,59 @@
+@import url("https://fonts.cdnfonts.com/css/gaqire");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #294024; */
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  margin: 5vmin;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5vmin;
+}
+
+.nav-logo img {
+  width: 10vmin;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.3em;
+  font-weight: 200;
+  align-items: center;
+}
+
+.nav-list li {
+  padding-left: 10vmin;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.banner img {
+  width: 100%;
+  height: 82vh;
+  object-fit: cover;
+  position: relative;
+}
+
+h1 {
+  font-family: "GAQIRE", sans-serif;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}
