@@ -10,6 +10,7 @@
   --light-beige: #eae1d5;
   --dark-green: #294024;
   --orange: #bf6139;
+  --brown: #3c2f23;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 30px;
   width: calc(100% - 60px);
   position: absolute;
   padding: 40px 30px;
@@ -37,7 +39,7 @@ body {
 
 .nav-list {
   list-style: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 200;
   z-index: 10;
 }
@@ -247,7 +249,7 @@ footer {
   gap: 20px;
 }
 
-@media screen and (min-width: 280px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .nav-list {
     position: fixed;
     top: -100%;
@@ -280,6 +282,10 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  .navbar {
+    position: fixed;
+    transition: all 0.5s;
+  }
   .nav-logo-title {
     font-family: "GAQIRE", sans-serif;
     color: var(--light-beige);
@@ -344,5 +350,17 @@ footer {
 
   .company-box-text p {
     font-size: 16px;
+  }
+
+  .nav-scroll {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  a.item-scroll {
+    color: var(--brown);
+  }
+
+  a.logo-title-scroll {
+    color: var(--brown);
   }
 }
