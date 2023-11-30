@@ -4,42 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- imported the JQuery library  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- imported the GSAP library for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- imported the GSAP library ScrollTrigger for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <header class="header-container">
       <nav class="navbar">
-        <div class="nav-logo">
+        <a href="#" class="nav-logo-title">Clayleaf</a>
+        <div class="nav-logo-image">
           <a href="#">
-            <img src="/images/Logo-2.png" alt="" />
+            <img src="/images/Primary-Logo-6.png" alt="clayleaf logo" />
           </a>
         </div>
         <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">About Us</a></li>
+          <li><a href="#" class="nav-item">Contact</a></li>
         </ul>
+
+        <div class="menu-toggle">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </div>
       </nav>
       <div class="banner">
+        <img src="/images/ceramic-photoshoot2.jpg" alt="two ceramics" />
+      </div>
+      <div class="banner-text">
+        <h1 class="title-logo">ClayLeaf</h1>
+        <p>"Where Art Meets Nature, <br />Crafted Sustainably"</p>
+        <a href="#" class="find-more-btn" id="banner-btn">Find More</a>
+      </div>
+      <div class="banner-overlay"></div>
+    </header>
+
+    <section class="company-container">
+      <div class="line"></div>
+      <h1>Minimalist Pottery.</h1>
+      <div class="company-box">
         <img
-          src="/images/ceramic-photoshoot4.jpg"
-          alt="ceramic with scenario"
+          src="images/ceramic-photoshoot3.jpg"
+          alt="woman holding brown ceramic"
         />
-        <div>
-          <h1>Clayleaf</h1>
-          <p>"Where Art Meets Nature, Crafted Sustainably"</p>
+        <div class="company-box-text">
+          <h3>
+            ClayLeaf: A Symphony of Nature-Inspired Pottery, Sustainability, and
+            Community Creativity
+          </h3>
+          <p>
+            ClayLeaf was founded by a ceramic artist inspired by nature. They
+            create intricate, nature-inspired ceramics that bring the beauty of
+            nature into people's homes. Driven by their passion for art and the
+            environment, the founder created a brand that promotes
+            sustainability and community. Today, ClayLeaf is a thriving symbol
+            of purpose-driven entrepreneurship, inspiring creativity in every
+            individual who crosses its path.
+          </p>
+          <a href="#" class="find-more-btn"><p>Find More</p></a>
         </div>
       </div>
-    </header>
+
+      <div class="company-box box-2">
+        <img
+          src="images/ceramics-beige.jpg"
+          alt="woman holding brown ceramic"
+        />
+        <div class="company-box-text">
+          <h3>
+            Nature's Embrace: ClayLeaf's Artful Fusion of Sustainability,
+            Community, and Personalized Pottery
+          </h3>
+          <p>
+            ClayLeaf blend of nature-inspired artistry, sustainability,
+            community engagement, education, artisanal pieces, personalization,
+            and customer focus sets it apart. It's the go-to choice for those
+            who value authenticity, creativity, and a deep connection to art and
+            nature in their ceramic products and interactions with the brand.
+          </p>
+          <a href="#" class="find-more-btn"><p>Find More</p></a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </section>
 
     <footer>
       <div>
-        <p>"Where Art Meets Nature, Crafted Sustainably"</p>
-        <div></div>
+        <h1 class="title-logo">ClayLeaf</h1>
+      </div>
+      <div>
+        <img
+          src="images/instagram-icon.png"
+          alt="instagram icon"
+          class="social-icons"
+        />
+        <img
+          src="images/facebook-icon.png"
+          alt="facebook icon"
+          class="social-icons"
+        />
+        <img src="images/x-icon.png" alt="x icon" class="social-icons" />
       </div>
       <div>&copy; Patricia Tami Sakita Chung</div>
     </footer>
+    <script src="scripts/hambuguer.js"></script>
   </body>
 </html>

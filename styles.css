@@ -6,54 +6,343 @@
   padding: 0;
 }
 
+:root {
+  --light-beige: #eae1d5;
+  --dark-green: #294024;
+  --orange: #bf6139;
+}
+
 body {
-  /* background-color: #294024; */
   width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
-.header-container {
-  margin: 5vmin;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5vmin;
+  align-items: center;
+  width: calc(100% - 60px);
+  position: absolute;
+  padding: 40px 30px;
 }
 
-.nav-logo img {
-  width: 10vmin;
+.nav-logo-image img {
+  width: 50px;
+}
+
+.nav-logo-title {
+  display: none;
 }
 
 .nav-list {
-  display: flex;
   list-style: none;
-  font-size: 1.3em;
+  font-size: 15px;
   font-weight: 200;
-  align-items: center;
-}
-
-.nav-list li {
-  padding-left: 10vmin;
+  z-index: 10;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: black;
+  text-transform: uppercase;
+  color: var(--light-beige);
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  z-index: 11;
+}
+
+.menu-toggle .hamburger {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 50px;
+  margin: 5px 0;
+  background-color: var(--light-beige);
+  transition: all 0.3s ease-out;
+}
+
+.menu-toggle .hamburger.open:first-child {
+  transform: rotate(45deg);
+  top: 12px;
+}
+
+.menu-toggle .hamburger.open:nth-child(2) {
+  transform: translateX(-50px);
+}
+
+.menu-toggle .hamburger.open:last-child {
+  transform: rotate(-45deg);
+  bottom: 12px;
+}
+
+.menu-toggle:hover .hamburger:nth-child(2) {
+  transform: translateX(-50px);
+}
+
+.nav-list.open {
+  top: 0;
+  transition: all 0.3s ease-in 0s;
+}
+
+.nav-list.open .nav-item {
+  padding-bottom: 30px;
+  letter-spacing: 0.2em;
+  opacity: 1;
+  transition-property: opacity, padding-bottom, letter-spacing;
+  transition-duration: 0.5s, 0.3s, 0.3s;
+  transition-delay: 0.5s, 0.4s, 0s;
+  transition-timing-function: ease-in, ease-in, ease;
+}
+
+.nav-list.open .nav-item:hover {
+  letter-spacing: 0.3em;
+}
+
+.nav-item:hover {
+  color: var(--orange);
 }
 
 .banner img {
   width: 100%;
-  height: 82vh;
+  height: 100vh;
   object-fit: cover;
   position: relative;
+  z-index: -10;
 }
 
-h1 {
-  font-family: "GAQIRE", sans-serif;
+.banner-text {
   position: absolute;
-  top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  top: 50%;
+  color: var(--light-beige);
   text-align: center;
+  gap: 30px;
+}
+
+.title-logo {
+  font-family: "GAQIRE", sans-serif;
+  font-weight: 100;
+}
+
+.banner-text p {
+  padding: 0 30px;
+  font-weight: 100;
+}
+
+.company-container {
+  margin: 80px 50px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--dark-green);
+}
+
+.company-container h1 {
+  padding: 30px 0;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.54);
+  top: 0;
+  z-index: -9;
+}
+
+.company-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.company-box img {
+  width: 100%;
+}
+
+.company-box h3 {
+  font-weight: 400;
+  color: var(--dark-green);
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.company-box p {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.company-box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.find-more-btn {
+  height: 30px;
+  width: 90px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--dark-green);
+  border: solid var(--dark-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-more-btn:hover {
+  color: var(--light-beige);
+  border: solid var(--orange);
+  background-color: var(--orange);
+}
+
+#banner-btn {
+  height: 40px;
+  width: 110px;
+  border: solid var(--light-beige);
+  color: var(--light-beige);
+}
+
+#banner-btn:hover {
+  color: var(--light-beige);
+  border: solid var(--orange);
+  background-color: var(--orange);
+}
+
+.social-icons {
+  width: 25px;
+  padding: 0 10px;
+}
+
+footer {
+  background-color: var(--dark-green);
+  height: 200px;
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1200px) {
+  .nav-list {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(41, 64, 36, 0.9);
+    transition: all 0.3s ease-out 0.2s;
+  }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0;
+    opacity: 0;
+    transition-property: opacity, padding, letter-spacing, color;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-timing-function: ease-out, ease-out, ease, ease;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-logo-title {
+    font-family: "GAQIRE", sans-serif;
+    color: var(--light-beige);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .banner-text h1 {
+    display: none;
+  }
+
+  .banner-text p {
+    font-size: 50px;
+    color: white;
+    font-family: "GAQIRE", sans-serif;
+  }
+
+  .find-more-btn {
+    height: 40px;
+    width: 110px;
+  }
+
+  .company-box {
+    flex-direction: row;
+    margin: 0 250px;
+  }
+
+  .company-box img {
+    width: 30%;
+  }
+
+  .company-box-text {
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .box-2 {
+    flex-direction: row-reverse;
+  }
+
+  .box-2 div {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .company-container h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 80px 0;
+  }
+
+  .company-box-text h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .company-box-text p {
+    font-size: 16px;
+  }
 }
