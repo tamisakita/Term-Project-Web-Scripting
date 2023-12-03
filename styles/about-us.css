@@ -1,0 +1,140 @@
+.navbar {
+  top: 0px;
+}
+
+.section-one,
+.section-two {
+  padding-bottom: 50px;
+}
+
+.section-one img {
+  width: 100%;
+  height: auto;
+}
+
+.section-one-text {
+  text-align: center;
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  color: var(--dark-green);
+  padding: 30px 0;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.noImg {
+  display: none;
+}
+
+.section-two-header {
+  display: none;
+}
+
+.line {
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 50px;
+  }
+
+  .section-two-header {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 250px;
+    color: var(--dark-green);
+    text-transform: lowercase;
+    font-family: "GAQIRE", sans-serif;
+    opacity: 30%;
+  }
+
+  .gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .noImg {
+    pointer-events: none;
+  }
+
+  .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .imgPreview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+  }
+
+  .wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .wrap img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .imgPreview .wrap img {
+    height: 100%;
+    max-height: 80vh;
+    width: auto;
+  }
+}

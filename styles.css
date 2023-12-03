@@ -33,7 +33,7 @@ p {
   height: 30px;
   width: calc(100% - 60px);
   position: absolute;
-  padding: 40px 3 0px;
+  padding: 40px 30px;
 }
 
 .nav-logo-image img {
@@ -186,6 +186,8 @@ p {
 
 .company-box img {
   width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .company-box h3 {

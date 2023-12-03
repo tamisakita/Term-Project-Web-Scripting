@@ -8,7 +8,11 @@
 
 .navbar {
   border-bottom: 0.3px solid var(--brown);
-  height: 90px;
+  position: relative;
+}
+
+.contact-navbar {
+  height: 107px;
   width: 100%;
 }
 
@@ -22,10 +26,6 @@ form {
 
 .section-one {
   padding-bottom: 30px;
-}
-
-.section-one img {
-  display: none;
 }
 
 .social-icons {
@@ -48,11 +48,15 @@ form {
   color: var(--dark-green);
 }
 
-/* .social-icons-container {
-  display: flex;
-} */
-
 @media screen and (min-width: 1200px) {
+  .main-container {
+    margin: 0 0 50px 0;
+  }
+
+  .navbar {
+    position: fixed;
+  }
+
   .nav-logo-title {
     color: var(--brown);
   }
