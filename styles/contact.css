@@ -1,0 +1,72 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-toggle .hamburger {
+  background-color: var(--black);
+}
+
+.navbar {
+  border-bottom: 0.3px solid var(--brown);
+  height: 90px;
+  width: 100%;
+}
+
+.container p {
+  text-align: center;
+}
+
+form {
+  padding: 40px 0;
+}
+
+.section-one {
+  padding-bottom: 30px;
+}
+
+.section-one img {
+  display: none;
+}
+
+.social-icons {
+  padding: 0 0 20px 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.submit-btn {
+  color: var(--white);
+  background-color: var(--dark-green);
+  border: none;
+}
+
+.submit-btn:hover {
+  color: var(--dark-green);
+}
+
+/* .social-icons-container {
+  display: flex;
+} */
+
+@media screen and (min-width: 1200px) {
+  .nav-logo-title {
+    color: var(--brown);
+  }
+
+  .nav-logo-title:hover {
+    text-decoration: none;
+    color: var(--brown);
+  }
+
+  .nav-list a {
+    color: var(--brown);
+  }
+
+  .nav-item:hover {
+    text-decoration: none;
+  }
+}
