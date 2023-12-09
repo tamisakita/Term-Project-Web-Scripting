@@ -116,7 +116,7 @@ p {
 }
 
 .menu-toggle:hover .hamburger:nth-child(2) {
-  transform: translateX(-50px);
+  /* transform: translateX(-50px); */
 }
 
 .banner img {
@@ -184,7 +184,7 @@ p {
   padding-bottom: 50px;
 }
 
-.company-box img {
+.company-box-img img {
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -256,6 +256,8 @@ footer {
   gap: 20px;
 }
 
+@media screen and (min-width: 768px) {
+}
 @media screen and (max-width: 1200px) {
   .nav-list {
     position: fixed;
@@ -315,9 +317,10 @@ footer {
   }
 
   .banner-text p {
-    font-size: 50px;
+    font-size: 80px;
     color: white;
     font-family: "GAQIRE", sans-serif;
+    padding-bottom: 50px;
   }
 
   .find-more-btn {
@@ -330,8 +333,8 @@ footer {
     margin: 0 250px;
   }
 
-  .company-box img {
-    width: 30%;
+  .company-box-img {
+    width: 50%;
   }
 
   .company-box-text {

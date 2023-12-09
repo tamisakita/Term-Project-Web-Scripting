@@ -10,12 +10,6 @@
 
     <!-- imported the JQuery library  -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- imported the GSAP library for scroll animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- imported the GSAP library ScrollTrigger for scroll animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <header class="header-container">
@@ -59,10 +53,14 @@
       <div class="line"></div>
       <h1>Minimalist Pottery.</h1>
       <div class="company-box">
-        <img
-          src="images/ceramic-photoshoot3.jpg"
-          alt="woman holding brown ceramic"
-        />
+        <div class="company-box-img">
+          <img
+            src="images/ceramic-photoshoot3.jpg"
+            alt="woman holding brown ceramic"
+            class="animated-element"
+          />
+        </div>
+
         <div class="company-box-text">
           <h3>
             ClayLeaf: A Symphony of Nature-Inspired Pottery, Sustainability, and
@@ -82,7 +80,9 @@
       </div>
 
       <div class="company-box box-2">
-        <img src="images/ceramics-beige-2.jpg" alt="three beige ceramics" />
+        <div class="company-box-img">
+          <img src="images/ceramics-beige-2.jpg" alt="three beige ceramics" />
+        </div>
         <div class="company-box-text">
           <h3>
             Nature's Embrace: ClayLeaf's Artful Fusion of Sustainability,
@@ -122,5 +122,13 @@
     </footer>
     <script src="scripts/hambuguer.js"></script>
     <script src="scripts/scrollnav.js"></script>
+    <!-- imported the GSAP library for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- imported the GSAP library ScrollTrigger for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <script src="scripts/scroll-animation.js"></script>
   </body>
 </html>

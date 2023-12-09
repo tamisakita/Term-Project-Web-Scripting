@@ -35,7 +35,6 @@ form {
 #map {
   height: 400px;
   width: 100%;
-  filter: grayscale(100%);
 }
 
 .submit-btn {
@@ -53,8 +52,15 @@ form {
     margin: 0 0 50px 0;
   }
 
+  .navbar.contact-navbar {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 0;
+  }
+
   .navbar {
     position: fixed;
+    height: 110px;
   }
 
   .nav-logo-title {
@@ -64,6 +70,10 @@ form {
   .nav-logo-title:hover {
     text-decoration: none;
     color: var(--brown);
+  }
+
+  .nav-list {
+    margin: 0;
   }
 
   .nav-list a {
