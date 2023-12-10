@@ -48,6 +48,10 @@ form {
 }
 
 @media screen and (min-width: 1200px) {
+  .container h1 {
+    padding-bottom: 50px;
+  }
+
   .main-container {
     margin: 0 0 50px 0;
   }
@@ -55,7 +59,7 @@ form {
   .navbar.contact-navbar {
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 0;
+    padding-top: 8px;
   }
 
   .navbar {

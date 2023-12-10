@@ -7,9 +7,19 @@
     <title>About Us</title>
 
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/globals.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/about-us.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- imported the lightbox plugin styles -->
+    <link href="styles/lightbox.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header-container">
@@ -37,11 +47,34 @@
     <main class="container">
       <h1>About Us</h1>
       <div class="section-one">
-        <div>
-          <img
-            src="./images/ceramics-drying.jpeg"
-            alt="different ceramic on the shelve"
-          />
+        <div class="about-slide-img">
+          <div>
+            <img
+              src="./images/ceramics-drying.jpeg"
+              alt="different ceramic on the shelve"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/building-ceramic2.jpg"
+              alt="Man building cerami 2c"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/building-ceramic3.jpg"
+              alt="Man building ceramic 3"
+            />
+          </div>
+          <div>
+            <img src="./images/ceramic-tools.jpg" alt="Ceramic tools" />
+          </div>
+          <div>
+            <img
+              src="./images/ceramics-shelve.jpeg"
+              alt="Different ceramics on the shelve"
+            />
+          </div>
         </div>
         <div class="section-one-text">
           <h2 class="section-header">Our story</h2>
@@ -62,108 +95,112 @@
       <h3 class="section-header">Our Ceramics</h3>
 
       <div class="gallery-container">
-        <div class="gallery">
-          <h3 class="section-header section-two-header">
-            Our <br />
-            Ceramics
-          </h3>
+        <h3 class="section-header section-two-header">
+          Our <br />
+          Ceramics
+        </h3>
+        <div class="gallery-images">
+          <a
+            href="./images/ceramic-gallery-01.jpg"
+            data-lightbox="gallery"
+            data-title="Essentials Line"
+            class="img-1"
+          >
+            <img
+              src="./images/ceramic-gallery-01.jpg"
+              alt="beige ceramic"
+              class="img"
+            />
+          </a>
 
-          <div class="imgPreview"></div>
-          <div class="imgContainer noImg"></div>
+          <a
+            href="./images/ceramic-gallery-02.jpg"
+            data-lightbox="gallery"
+            data-title="Classic Curve Line"
+            class="img-2"
+          >
+            <img
+              src="./images/ceramic-gallery-02.jpg"
+              alt="ceramic with flower and fabric"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-01.jpg"
-                alt="beige ceramic"
-                class="img"
-              />
-            </div>
-          </div>
+          <a
+            href="./images/ceramic-gallery-03.jpeg"
+            data-lightbox="gallery"
+            data-title="Timeless Line"
+          >
+            <img
+              src="./images/ceramic-gallery-03.jpeg"
+              alt="ceramic with different colors"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer noImg"></div>
-          <div class="imgContainer noImg"></div>
+          <a
+            href="./images/ceramic-gallery-04.jpg"
+            data-lightbox="gallery"
+            data-title="Everyday Line"
+          >
+            <img
+              src="./images/ceramic-gallery-04.jpg"
+              alt="ceramic plate"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-02.jpg"
-                alt="ceramic with flower and fabric"
-                class="img"
-              />
-            </div>
-          </div>
+          <a
+            href="./images/ceramic-gallery-05.jpeg"
+            data-lightbox="gallery"
+            data-title="Crafted Line"
+            class="img-5"
+          >
+            <img
+              src="./images/ceramic-gallery-05.jpeg"
+              alt="three ceramics with different shapes"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-03.jpeg"
-                alt="ceramic with different colors"
-                class="img"
-              />
-            </div>
-          </div>
+          <a
+            href="./images/ceramic-gallery-06.jpg"
+            data-lightbox="gallery"
+            data-title="Nature Coasters"
+            class="img-6"
+          >
+            <img
+              src="./images/ceramic-gallery-06.jpg"
+              alt="ceramics top view"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-04.jpg"
-                alt="ceramic plate"
-                class="img"
-              />
-            </div>
-          </div>
+          <a
+            href="./images/ceramic-gallery-07.jpg"
+            data-lightbox="gallery"
+            data-title="Artisan"
+            class="img-7"
+          >
+            <img
+              src="./images/ceramic-gallery-07.jpg"
+              alt="making ceramic"
+              class="img"
+            />
+          </a>
 
-          <div class="imgContainer noImg"></div>
-
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-05.jpeg"
-                alt="three ceramics with different shapes"
-                class="img"
-              />
-            </div>
-          </div>
-
-          <div class="imgContainer noImg"></div>
-
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-06.jpg"
-                alt="ceramics top view"
-                class="img"
-              />
-            </div>
-          </div>
-
-          <div class="imgContainer noImg"></div>
-          <div class="imgContainer noImg"></div>
-          <div class="imgContainer noImg"></div>
-
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-07.jpg"
-                alt="making ceramic"
-                class="img"
-              />
-            </div>
-          </div>
-
-          <div class="imgContainer noImg"></div>
-          <div class="imgContainer noImg"></div>
-
-          <div class="imgContainer">
-            <div class="wrap">
-              <img
-                src="./images/ceramic-gallery-08.jpg"
-                alt="ceramics in process"
-                class="img"
-              />
-            </div>
-          </div>
+          <a
+            href="./images/ceramic-gallery-08.jpg"
+            data-lightbox="gallery"
+            data-title="Tranquil Line"
+            class="img-8"
+          >
+            <img
+              src="./images/ceramic-gallery-08.jpg"
+              alt="ceramics in process"
+              class="img"
+            />
+          </a>
         </div>
       </div>
 
@@ -193,8 +230,17 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/hambuguer.js"></script>
     <script src="scripts/scrollnav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Flip.min.js"></script>
-    <script src="scripts/gallery.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".about-slide-img").slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          fade: true,
+          cssEase: "linear",
+        });
+      });
+    </script>
+    <script src="scripts/lightbox.js"></script>
   </body>
 </html>
