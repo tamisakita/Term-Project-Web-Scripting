@@ -5,17 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- added a icon for the tab -->
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- imported the JQuery library  -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- imported the GSAP library for scroll animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- imported the GSAP library ScrollTrigger for scroll animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- linked the css styles -->
+    <link rel="stylesheet" href="styles/globals.css" />
   </head>
   <body>
     <header class="header-container">
@@ -29,7 +22,7 @@
         <ul class="nav-list">
           <li><a href="#" class="nav-item">Home</a></li>
           <li>
-            <a href="contact.html" class="nav-item">About Us</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
           </li>
           <li>
             <a href="contact.html" class="nav-item">Contact</a>
@@ -43,25 +36,31 @@
         </div>
       </nav>
       <div class="banner">
-        <img src="/images/ceramic-photoshoot2.jpg" alt="two ceramics" />
+        <img src="/images/ceramic-home-page.jpg" alt="two ceramics" />
       </div>
       <div class="banner-text">
         <h1 class="title-logo">ClayLeaf</h1>
-        <p>"Where Art Meets Nature, <br />Crafted Sustainably"</p>
-        <a href="#" class="find-more-btn" id="banner-btn">Find More</a>
+        <p>"Where Art Meets Nature, <br />Crafted Sustainably."</p>
+        <a href="about-us.html" class="find-more-btn" id="banner-btn"
+          >Find More</a
+        >
       </div>
       <div class="banner-overlay"></div>
     </header>
 
     <main class="container">
       <div class="line"></div>
-      <h1>Minimalist Pottery.</h1>
+      <h1 class="container-title">Minimalist Pottery.</h1>
       <div class="company-box">
-        <img
-          src="images/ceramic-photoshoot3.jpg"
-          alt="woman holding brown ceramic"
-        />
-        <div class="company-box-text">
+        <div class="company-box-img">
+          <img
+            src="images/ceramic-photoshoot3.jpg"
+            alt="woman holding brown ceramic"
+            class="animatio-img-1"
+          />
+        </div>
+
+        <div class="company-box-text animation-text-1">
           <h3>
             ClayLeaf: A Symphony of Nature-Inspired Pottery, Sustainability, and
             Community Creativity
@@ -75,16 +74,19 @@
             of purpose-driven entrepreneurship, inspiring creativity in every
             individual who crosses its path.
           </p>
-          <a href="#" class="find-more-btn"><p>Find More</p></a>
+          <a href="about-us.html" class="find-more-btn"><p>Find More</p></a>
         </div>
       </div>
 
       <div class="company-box box-2">
-        <img
-          src="images/ceramics-beige.jpg"
-          alt="woman holding brown ceramic"
-        />
-        <div class="company-box-text">
+        <div class="company-box-img">
+          <img
+            src="images/ceramics-beige-2.jpg"
+            alt="three beige ceramics"
+            class="animatio-img-2"
+          />
+        </div>
+        <div class="company-box-text animation-text-2">
           <h3>
             Nature's Embrace: ClayLeaf's Artful Fusion of Sustainability,
             Community, and Personalized Pottery
@@ -96,7 +98,7 @@
             who value authenticity, creativity, and a deep connection to art and
             nature in their ceramic products and interactions with the brand.
           </p>
-          <a href="#" class="find-more-btn"><p>Find More</p></a>
+          <a href="about-us.html" class="find-more-btn"><p>Find More</p></a>
         </div>
       </div>
       <div class="line"></div>
@@ -121,7 +123,17 @@
       </div>
       <div>&copy; Patricia Tami Sakita Chung</div>
     </footer>
+    <!-- imported the JQuery library  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- imported js code for hamburguer menu -->
     <script src="scripts/hambuguer.js"></script>
+    <!-- imported js code for navbar animation when scrolling -->
     <script src="scripts/scrollnav.js"></script>
+    <!-- imported the GSAP library for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- imported the GSAP library ScrollTrigger for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- imported js code for animation when scrolling -->
+    <script src="scripts/scroll-animation.js"></script>
   </body>
 </html>

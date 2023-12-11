@@ -33,7 +33,7 @@ p {
   height: 30px;
   width: calc(100% - 60px);
   position: absolute;
-  padding: 40px 3 0px;
+  padding: 40px 30px;
 }
 
 .nav-logo-image img {
@@ -116,7 +116,7 @@ p {
 }
 
 .menu-toggle:hover .hamburger:nth-child(2) {
-  transform: translateX(-50px);
+  /* transform: translateX(-50px); */
 }
 
 .banner img {
@@ -184,8 +184,10 @@ p {
   padding-bottom: 50px;
 }
 
-.company-box img {
+.company-box-img img {
   width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .company-box h3 {
@@ -313,9 +315,11 @@ footer {
   }
 
   .banner-text p {
-    font-size: 50px;
+    font-size: 80px;
     color: white;
     font-family: "GAQIRE", sans-serif;
+    padding-bottom: 50px;
+    animation: textAnimation 3s linear;
   }
 
   .find-more-btn {
@@ -328,8 +332,8 @@ footer {
     margin: 0 250px;
   }
 
-  .company-box img {
-    width: 30%;
+  .company-box-img {
+    width: 50%;
   }
 
   .company-box-text {
@@ -371,5 +375,14 @@ footer {
 
   a.logo-title-scroll {
     color: var(--brown);
+  }
+
+  @keyframes textAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
   }
 }
