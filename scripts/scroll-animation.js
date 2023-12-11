@@ -61,22 +61,12 @@ ScrollTrigger.matchMedia({
     // setting the animation on the elements inside the container
     timeline.fromTo(".line", { width: "0%" }, { width: "100%" });
 
-    timeline.fromTo(".animatio-img-1", { x: -80 }, { x: -40 });
+    timeline.fromTo(".animatio-img-1", { x: -80 }, { x: -40 }, 0);
 
-    timeline.fromTo(".animatio-img-2", { x: 80 }, { x: 40 });
+    timeline.fromTo(".animatio-img-2", { x: 80 }, { x: 40 }, 0);
 
-    // smooth scroll
-    const lenis = new Lenis();
+    timeline.fromTo(".animation-text-1", { x: 80 }, { x: 40 }, 0);
 
-    lenis.on("scroll", (e) => {
-      console.log(e);
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
+    timeline.fromTo(".animation-text-2", { x: -80 }, { x: -40 }, 0);
   },
 });
