@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!-- added a icon for the tab -->
+    <!-- added an icon for the tab -->
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
-    <!-- linked the css styles -->
+
+    <!-- linked the local css styles -->
     <link rel="stylesheet" href="styles/globals.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header-container">
       <nav class="navbar">
         <a href="#" class="nav-logo-title">Clayleaf</a>
@@ -48,6 +50,7 @@
       <div class="banner-overlay"></div>
     </header>
 
+    <!-- main content with Gsap scroll animation-->
     <main class="container">
       <div class="line"></div>
       <h1 class="container-title">Minimalist Pottery.</h1>
@@ -104,6 +107,7 @@
       <div class="line"></div>
     </main>
 
+    <!-- footer  -->
     <footer>
       <div>
         <h1 class="title-logo">ClayLeaf</h1>
@@ -123,16 +127,27 @@
       </div>
       <div>&copy; Patricia Tami Sakita Chung</div>
     </footer>
+    <!-- 
+      It's important to ensure that all imported scripts are placed in the correct order, as a script might need the one above it to work properly. 
+    This order should be maintained because the page loads from top to bottom.
+    Additionally, its important to keep all script tags after the code and before the closing body tag. 
+    -->
+
     <!-- imported the JQuery library  -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <!-- imported js code for hamburguer menu -->
     <script src="scripts/hambuguer.js"></script>
+
     <!-- imported js code for navbar animation when scrolling -->
     <script src="scripts/scrollnav.js"></script>
+
     <!-- imported the GSAP library for scroll animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <!-- imported the GSAP library ScrollTrigger for scroll animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- imported js code for animation when scrolling -->
     <script src="scripts/scroll-animation.js"></script>
   </body>

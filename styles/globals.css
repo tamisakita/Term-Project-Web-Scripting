@@ -256,6 +256,11 @@ footer {
   gap: 20px;
 }
 
+input {
+  height: 30px;
+}
+
+/* specific styles for mobile and tablet */
 @media screen and (max-width: 1200px) {
   .nav-list {
     position: fixed;
@@ -288,6 +293,7 @@ footer {
   }
 }
 
+/* specific styles for desktop size */
 @media screen and (min-width: 1200px) {
   p {
     font-weight: 200;
