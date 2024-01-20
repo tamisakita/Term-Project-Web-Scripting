@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <!-- added an icon for the tab -->
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
 
+    <!-- It's important to ensure that all imported styles are placed in the correct order, as a style might need the one above it to work properly. 
+    This order should be maintained because the page loads from top to bottom. -->
+
+    <!-- linked the local css styles -->
     <link rel="stylesheet" href="styles/globals.css" />
     <link rel="stylesheet" href="styles/contact.css" />
+
+    <!-- linked the parsley css styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/src/parsley.min.css"
     />
   </head>
   <body>
+    <!-- header -->
     <header class="header-container">
       <nav class="navbar contact-navbar">
         <a href="index.html" class="nav-logo-title">Clayleaf</a>
@@ -37,6 +45,7 @@
       </nav>
     </header>
 
+    <!-- main content -->
     <main class="container main-container">
       <h1 id="contact-title">Contact</h1>
       <p>
@@ -44,6 +53,7 @@
         you in person. Feel free to make a reservation.
       </p>
 
+      <!-- form  with Parsley validation -->
       <div class="form-container">
         <form id="form" data-parsley-validate>
           <div class="form-group">
@@ -92,9 +102,11 @@
         </form>
       </div>
 
+      <!-- Google maps -->
       <div id="map"></div>
     </main>
 
+    <!-- footer -->
     <footer>
       <div>
         <h1 class="title-logo">ClayLeaf</h1>
@@ -115,22 +127,33 @@
       <div>&copy; Patricia Tami Sakita Chung</div>
     </footer>
 
+    <!-- 
+      It's important to ensure that all imported scripts are placed in the correct order, as a script might need the one above it to work properly. 
+    This order should be maintained because the page loads from top to bottom.
+    Additionally, its important to keep all script tags after the code and before the closing body tag. 
+    -->
+
     <!-- imported the JQuery library  -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- imported js code for hamburguer menu -->
     <script src="scripts/hambuguer.js"></script>
-    <script src="scripts/scrollnav.js"></script>
 
     <!-- imported form plugin Parsley -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
+    <!-- Jquery code that initialize the parsley form validation the the id form -->
     <script>
       $("#form").parsley();
     </script>
+
     <!-- imported Google Maps Api -->
     <script
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdZDLYRQB5c-1IQVmjUO_MqPFFuYQgiBY&callback=initMap"
     ></script>
+
+    <!-- imported js code for Google Maps Api -->
     <script src="scripts/maps.js"></script>
   </body>
 </html>

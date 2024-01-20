@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
 
+    <!-- added an icon for the tab -->
     <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
+
+    <!-- It's important to ensure that all imported styles are placed in the correct order, as a style might need the one above it to work properly. 
+    This order should be maintained because the page loads from top to bottom. -->
+
+    <!-- linked the local css styles -->
     <link rel="stylesheet" href="styles/globals.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/about-us.css" />
+
+    <!-- linked the slick css styles -->
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -18,10 +26,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
-    <!-- imported the lightbox plugin styles -->
+
+    <!-- imported the lightbox plugin css styles -->
     <link href="styles/lightbox.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header -->
     <header class="header-container">
       <nav class="navbar">
         <a href="index.html" class="nav-logo-title">Clayleaf</a>
@@ -44,8 +54,11 @@
       </nav>
     </header>
 
+    <!-- main content -->
     <main class="container">
       <h1>About Us</h1>
+
+      <!-- slick slideshow -->
       <div class="section-one">
         <div class="about-slide-img">
           <div>
@@ -94,6 +107,7 @@
 
       <h3 class="section-header">Our Ceramics</h3>
 
+      <!-- lightbox gallery -->
       <div class="gallery-container">
         <h3 class="section-header section-two-header">
           Our <br />
@@ -207,6 +221,7 @@
       <div class="line"></div>
     </main>
 
+    <!-- footer -->
     <footer>
       <div>
         <h1 class="title-logo">ClayLeaf</h1>
@@ -226,14 +241,32 @@
       </div>
       <div>&copy; Patricia Tami Sakita Chung</div>
     </footer>
+
+    <!-- 
+      It's important to ensure that all imported scripts are placed in the correct order, as a script might need the one above it to work properly. 
+    This order should be maintained because the page loads from top to bottom.
+    Additionally, its important to keep all script tags after the code and before the closing body tag. 
+    -->
+
     <!-- imported the JQuery library  -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- imported js code for hamburguer menu -->
     <script src="scripts/hambuguer.js"></script>
+
+    <!-- imported js code for navbar animation when scrolling -->
     <script src="scripts/scrollnav.js"></script>
+
+    <!-- imported slick plugin for the slideshow -->
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Jquery code that creates the slideshow with slick -->
     <script>
+      // I used $(document).ready to ensure that the code will be executed just when the page finished loading
+      // Then I initilized the slick slider on the class .about-slide-img which will show the slideshow
       $(document).ready(function () {
         $(".about-slide-img").slick({
+          // In this part I added the slick options to make a autoplay slideshow
           autoplay: true,
           autoplaySpeed: 1000,
           fade: true,
@@ -241,6 +274,8 @@
         });
       });
     </script>
+
+    <!-- imported js code for lightbox gallery -->
     <script src="scripts/lightbox.js"></script>
   </body>
 </html>
