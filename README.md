@@ -16,3 +16,7 @@ This was the final project for the Web Scripting 01 subject for New Media and We
 - [Gsap](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)
 - [Parsley](https://parsleyjs.org/)
 - [Slick](https://kenwheeler.github.io/slick/)
+
+## Website Link
+
+[Link](https://tamisakita.github.io/Term-Project-Web-Scripting/)
